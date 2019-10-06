@@ -1,0 +1,78 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DoorStep Shipping</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/business-casual.min.css' %}" rel="stylesheet">
+   <link href="{% static 'css/doorstep.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">Your Package</span>
+    
+  </h1>
+
+ <!-- tracking information -->
+<div class="container">
+ <div class="card">
+  {% for x in track_details %}
+  <h5 class="card-header">CLINTON</h5>
+  <div class="card-body">
+    <p class="card-title">Tracking number: {{x.tracking_number}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Package Status: {{x.Package_status}}<br> <br><hr>
+
+    Ship date: {{x.Ship_date}}<br><br><br><hr>
+
+      <div class="col"><b><br>Reciever's Name: {{x.Receiver_Last_Name}}<br>Delivery Address: {{x.Receiver_Address}}  </b></div><br><br><br><hr>
+
+
+      Estimated delivery: {{x.Estimated_delivery}} <br><br><hr>
+
+
+      Service Type: {{x.Service_Type}}<br><br> Senders Name: {{x.Sender_Name}} <hr></p>
+    <p class="card-text"></div>
+
+
+  <div class="container">
+    <h5>
+  <div class="row">
+    <div class="col">Date/Time<br><br>{{x.Date_Time}}  </b></b></div>
+    <div class="col">Activity<br><br>{{x.Billng_Activity}}  </div>
+    <div class="col">Location<br><br>{{x.Current_Location}} </div>
+    <div class="col">Details<br><br>{{x.Payment_Details}} </div>
+  </div>
+</h5>
+
+</p>
+   {% endfor%} 
+  </div>
+</div>
+</div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

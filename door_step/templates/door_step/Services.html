@@ -1,0 +1,164 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DoorStep Shipping</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/business-casual.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">WE OFFER ONE OF THE BEST SERVICES IN THE WORLD</span>
+    <span class="site-heading-lower">DoorStep Shipping</span>
+  </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Home'%}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+            <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Track'%}">Track</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'About'%}">About Us</a>
+          </li>
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Services'%}">Services</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Contact'%}">Contact</a>
+          </li>
+
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="product-item">
+        <div class="product-item-title d-flex">
+          <div class="bg-faded p-5 d-flex ml-auto rounded">
+            <h2 class="section-heading mb-0">
+              <span class="section-heading-upper">DoorStep Shipping</span>
+              <span class="section-heading-lower">ROAD FREIGHT​</span>
+            </h2>
+          </div>
+        </div>
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'img/road_frieght.jpg' %}" alt="">
+        <div class="product-item-description d-flex mr-auto">
+          <div class="bg-faded p-5 rounded">
+            <p class="mb-0">If your parcel is not so urgent why not consider Road Freight. This will take longer than an urgent air courier but normally it will save you over 60%. We have the whole of Europe set up for economy road freight deliveries. Whether it is just a box or 40 pallets we can deliver on time, or just in time stock replacement.
+
+            Through our network of agents we have the most comprehensive services available. So if you need a pallet or pallets from Runcorn to Germany don’t worry, we have it covered. This service is easy to use, extremely cost effective and can be mirrored from anywhere in Europe back to the UK.
+
+      All parcels are fully tracked with the guarantee that Sure Express is doing the business for you. We check our freight deliveries every day, sending you daily updates and your very own personal friendly customer service person is there to advise you every step of the way.</p>
+                </div>
+              </div>
+            </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="product-item">
+        <div class="product-item-title d-flex">
+          <div class="bg-faded p-5 d-flex mr-auto rounded">
+            <h2 class="section-heading mb-0">
+              <span class="section-heading-upper">DoorStep shipping</span>
+              <span class="section-heading-lower">AIR FREIGHT​</span>
+            </h2>
+          </div>
+        </div>
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'img/air_frieght.jpg' %}" alt="">
+        <div class="product-item-description d-flex ml-auto">
+          <div class="bg-faded p-5 rounded">
+            <p class="mb-0">We can offer Airfreight and Courier services world-wide with competitive rates and first class service.
+
+              We have access to a network spanning more than 220 countries and territories and more than 120,000 destinations, we provide courier and express services to business and private customers. Whether it is documents or parcels, Same Day, Time Definite or Day Definite delivery, we can service your requirements.
+
+
+                <ul>
+                  <li>Export Services – International Express Delivery</li>
+                  <li>Same Day</li>
+                  <li>Time Definite</li>
+                  <li>Day Definite</li>
+                  <li>Import Services – Inbound Express Delivery</li>
+                </ul>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="product-item">
+        <div class="product-item-title d-flex">
+          <div class="bg-faded p-5 d-flex ml-auto rounded">
+            <h2 class="section-heading mb-0">
+              <span class="section-heading-upper">DoorStep Shipping</span>
+              <span class="section-heading-lower">SAME DAY SERVICE</span>
+            </h2>
+          </div>
+        </div>
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'img/parcel.jpg' %}" alt="">
+        <div class="product-item-description d-flex mr-auto">
+          <div class="bg-faded p-5 rounded">
+            <p class="mb-0">Is tomorrow too late? If so, we have the solution. Our same day service is a dedicated service for time-critical and time-definite deliveries. It’s perfect for deliveries of all sizes throughout the UK.
+            By offering complete flexibility and dedication, we ensure that you get the exact service you need, and your customers want. Just give us a call, 7 days a week, 365 days a year. Our same day service isn’t just limited to urgent dedicated deliveries, we also provide a full range of services for the movement of any kind of goods, large or small.
+
+            As a professionally-run business, we understand the importance of good customer service and our policy is to treat your customers as if they were our own. So when you promise them that something will be there on time, we'll make sure that it is, every time.
+            We believe in listening to our customers and are proud to have developed long-term relationships with a wide range of companies and sectors. They know that our friendly team of couriers and support staff are always ready to help solve their delivery challenges.
+
+            Let us help you with yours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Copyright &copy; DoorStep Shipping 2019</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>
